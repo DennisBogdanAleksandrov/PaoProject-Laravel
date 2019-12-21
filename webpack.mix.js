@@ -17,3 +17,5 @@ mix.react('resources/js/app.js', 'public/js')
     processCssUrls: false,
     postCss: [ tailwindcss('./tailwind.config.js') ],
   })
+
+  mix.browserSync('localhost:8000');

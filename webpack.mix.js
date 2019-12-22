@@ -18,5 +18,5 @@ mix.react('resources/js/app.js', 'public/js')
     postCss: [ tailwindcss('./tailwind.config.js') ],
   })
 
-  // mix.browserSync('10.0.0.4:5000');
-  mix.browserSync('10.14.60.255:5000');
+  mix.browserSync('10.0.0.4:5000');
+  // mix.browserSync('10.14.60.255:5000');

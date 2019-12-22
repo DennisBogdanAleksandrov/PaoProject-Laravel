@@ -9,8 +9,16 @@
 
 
 
+
+
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@font-face {
+  font-family: 'RockSalt';
+  src: local('RockSalt'), url(../fonts/RockSalt-Regular.ttf) format('truetype');
+}

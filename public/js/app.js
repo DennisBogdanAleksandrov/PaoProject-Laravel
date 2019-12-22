@@ -36021,6 +36021,28 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/images/diamonds.svg":
+/*!***************************************!*\
+  !*** ./resources/images/diamonds.svg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/diamonds.svg?49a36e6f96f5c5de541770618b782c5c";
+
+/***/ }),
+
+/***/ "./resources/images/heart.svg":
+/*!************************************!*\
+  !*** ./resources/images/heart.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/heart.svg?630c64003bf303596caef179a2e712ad";
+
+/***/ }),
+
 /***/ "./resources/images/jfl-GfmIT_pseDQ-unsplash.jpg":
 /*!*******************************************************!*\
   !*** ./resources/images/jfl-GfmIT_pseDQ-unsplash.jpg ***!
@@ -36043,14 +36065,14 @@ module.exports = "/images/menu-symbol-of-three-parallel-lines.png?66b87adf69676e
 
 /***/ }),
 
-/***/ "./resources/images/playing-cards-png-11-transparent.png":
-/*!***************************************************************!*\
-  !*** ./resources/images/playing-cards-png-11-transparent.png ***!
-  \***************************************************************/
+/***/ "./resources/images/playing-cards-png-11-original.png":
+/*!************************************************************!*\
+  !*** ./resources/images/playing-cards-png-11-original.png ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/playing-cards-png-11-transparent.png?4140fcbbca0ae21805866601e26a30ca";
+module.exports = "/images/playing-cards-png-11-original.png?5795a5ddd9d9a6b99a5c494110abd05a";
 
 /***/ }),
 
@@ -36065,113 +36087,14 @@ module.exports = "/images/settings.png?67f582c9b17e62b30dfdf04bb19b1111";
 
 /***/ }),
 
-/***/ "./resources/js/AuthComponents/HomeP.js":
-/*!**********************************************!*\
-  !*** ./resources/js/AuthComponents/HomeP.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/images/spades.svg":
+/*!*************************************!*\
+  !*** ./resources/images/spades.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./resources/js/AuthComponents/Navbar.js");
-/* harmony import */ var _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/jfl-GfmIT_pseDQ-unsplash.jpg */ "./resources/images/jfl-GfmIT_pseDQ-unsplash.jpg");
-/* harmony import */ var _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_playing_cards_png_11_transparent_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../images/playing-cards-png-11-transparent.png */ "./resources/images/playing-cards-png-11-transparent.png");
-/* harmony import */ var _images_playing_cards_png_11_transparent_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_playing_cards_png_11_transparent_png__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
-
-var divStyling = {
-  backgroundImage: "url(" + _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3___default.a + ")",
-  backgroundPosition: '',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
-};
-
-var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: divStyling,
-    className: "h-screen"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-16 w-16 py-24 mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_playing_cards_png_11_transparent_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    className: "",
-    alt: "Logo image"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-blue-600 px-8 py-2 rounded-lg"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-gray-200"
-  }, "Go to flashcards"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-row justify-between"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-8 h-12 bg-white rounded"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-8 h-12 bg-white rounded"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-8 h-12 bg-white rounded"
-  })))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Home); //background doesn't look good on desktop view. Blur it and add a dark filter over it
-//don't forget to change your password on all accounts after this
-
-/***/ }),
-
-/***/ "./resources/js/AuthComponents/Navbar.js":
-/*!***********************************************!*\
-  !*** ./resources/js/AuthComponents/Navbar.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/settings.png */ "./resources/images/settings.png");
-/* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_settings_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/menu-symbol-of-three-parallel-lines.png */ "./resources/images/menu-symbol-of-three-parallel-lines.png");
-/* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__);
- // import { Link } from 'react-router-dom';
-
-
-
-
-var Navbar = function Navbar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-black-transparent"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-between"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-12 w-12 m-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    alt: "settings icon"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-12 w-12 m-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "menu icon"
-  })))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Navbar); //{/* <Link to="/page1">Page1</Link> */}
-//for images to work you'd import them and put it into jsx within a div and set wisth and height on that parent div.
+module.exports = "/images/spades.svg?a768481c43d39f0e4fc54482c2f636be";
 
 /***/ }),
 
@@ -36189,10 +36112,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _AuthComponents_HomeP__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AuthComponents/HomeP */ "./resources/js/AuthComponents/HomeP.js");
+/* harmony import */ var _pages_HomeP__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/HomeP */ "./resources/js/pages/HomeP.js");
+/* harmony import */ var _pages_FlashcardsP__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/FlashcardsP */ "./resources/js/pages/FlashcardsP.js");
 // require('./bootstrap'); 
 
  //measn to rename it to Router. npm install --save react-router-dom -
+
 
 
 
@@ -36201,7 +36126,11 @@ function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/home",
-    component: _AuthComponents_HomeP__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _pages_HomeP__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/test123",
+    component: _pages_FlashcardsP__WEBPACK_IMPORTED_MODULE_4__["default"]
   })));
 }
 
@@ -36214,6 +36143,302 @@ if (document.getElementById('react')) {
 //Start on Creating the Nav bar
 //
 //I'm trying to achive this page not being displayed
+
+/***/ }),
+
+/***/ "./resources/js/components/Logo.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Logo.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Logo; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_playing_cards_png_11_original_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../images/playing-cards-png-11-original.png */ "./resources/images/playing-cards-png-11-original.png");
+/* harmony import */ var _images_playing_cards_png_11_original_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_playing_cards_png_11_original_png__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function Logo() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "relative"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_playing_cards_png_11_original_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    className: "",
+    alt: "Logo image"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "absolute mt-12 ml-16 text-white text-sm font-RockSalt",
+    style: pStyle
+  }, "Pao"));
+} //user css to position the text purfectly and to slant it. 
+
+var pStyle = {
+  'top': 15,
+  'right': 0,
+  'bottom': 0,
+  'left': -10,
+  'transform': 'rotate(20deg)'
+};
+
+/***/ }),
+
+/***/ "./resources/js/components/Navbar.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Navbar.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/settings.png */ "./resources/images/settings.png");
+/* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_settings_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/menu-symbol-of-three-parallel-lines.png */ "./resources/images/menu-symbol-of-three-parallel-lines.png");
+/* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttons */ "./resources/js/components/buttons.js");
+ // import { Link } from 'react-router-dom';
+
+
+
+
+
+var Navbar = function Navbar() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-black-transparent"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container mx-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-between lg:hidden"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-12 w-12 m-4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: "settings icon"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-12 w-12 m-4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "menu icon"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "hidden lg:flex justify-end"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttons__WEBPACK_IMPORTED_MODULE_3__["StandardButton"], {
+    value: "Settings",
+    styleName: "bg-blue-400 border border-white text-white"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttons__WEBPACK_IMPORTED_MODULE_3__["StandardButton"], {
+    value: "register",
+    styleName: "bg-white"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Navbar); //{/* <Link to="/page1">Page1</Link> */}
+//for images to work you'd import them and put it into jsx within a div and set wisth and height on that parent div.
+
+/***/ }),
+
+/***/ "./resources/js/components/PaoTable.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/PaoTable.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var PaoTable = function PaoTable() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    "class": "table-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+    "class": "px-4 py-2"
+  }, "P"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+    "class": "px-4 py-2"
+  }, "A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+    "class": "px-4 py-2"
+  }, "O"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "Alex"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "Threw"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "Bread")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    "class": "bg-gray-100"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "Daniel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "kicked"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "bucket")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "Arron"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "drove"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    "class": "border px-4 py-2"
+  }, "rings")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PaoTable);
+
+/***/ }),
+
+/***/ "./resources/js/components/buttons.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/buttons.js ***!
+  \********************************************/
+/*! exports provided: CallToAction, StandardButton, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallToAction", function() { return CallToAction; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StandardButton", function() { return StandardButton; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_diamonds_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../images/diamonds.svg */ "./resources/images/diamonds.svg");
+/* harmony import */ var _images_diamonds_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_diamonds_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_heart_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/heart.svg */ "./resources/images/heart.svg");
+/* harmony import */ var _images_heart_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_heart_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_spades_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/spades.svg */ "./resources/images/spades.svg");
+/* harmony import */ var _images_spades_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_spades_svg__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function CallToAction() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-blue2-transparent px-10 pb-4 pt-2 rounded-2rem font-RockSalt",
+    style: {
+      'boxShadow': '0px 7.15385px 5.36539px rgba(0, 0, 0, 0.25)'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-gray-200 text-center text-2xl"
+  }, "Go to Flashcards"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-row justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-16 h-20 mx-2 bg-white rounded shadow-2xl"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-end m-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_heart_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "12",
+    className: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "flex justify-center text-3xl"
+  }, "P")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-16 h-20 mx-2 bg-white rounded shadow-2xl"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-end m-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_diamonds_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+    width: "12",
+    className: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "flex justify-center text-3xl"
+  }, "A")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-16 h-20 mx-2 bg-white rounded shadow-2xl"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-end m-1"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_spades_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    width: "12",
+    className: ""
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "flex justify-center text-3xl"
+  }, "O"))));
+}
+;
+function StandardButton(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "px-10 py-2 my-5 mx-2 rounded-sm text-xl ".concat(props.styleName)
+  }, props.value);
+}
+;
+/* harmony default export */ __webpack_exports__["default"] = (CallToAction);
+
+/***/ }),
+
+/***/ "./resources/js/pages/FlashcardsP.js":
+/*!*******************************************!*\
+  !*** ./resources/js/pages/FlashcardsP.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_buttons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/buttons */ "./resources/js/components/buttons.js");
+
+
+
+var Flashcards = function Flashcards() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Flashcards);
+
+/***/ }),
+
+/***/ "./resources/js/pages/HomeP.js":
+/*!*************************************!*\
+  !*** ./resources/js/pages/HomeP.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/components/Navbar.js");
+/* harmony import */ var _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/jfl-GfmIT_pseDQ-unsplash.jpg */ "./resources/images/jfl-GfmIT_pseDQ-unsplash.jpg");
+/* harmony import */ var _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_buttons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/buttons */ "./resources/js/components/buttons.js");
+/* harmony import */ var _components_PaoTable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/PaoTable */ "./resources/js/components/PaoTable.js");
+/* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Logo */ "./resources/js/components/Logo.js");
+
+
+
+
+
+
+
+var divStyling = {
+  backgroundImage: "url(" + _images_jfl_GfmIT_pseDQ_unsplash_jpg__WEBPACK_IMPORTED_MODULE_3___default.a + ")",
+  backgroundPosition: '',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+};
+
+var Home = function Home() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: divStyling,
+    className: "h-screen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container mx-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col h-screen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-32 w-32 mt-24 mb-20 mx-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_6__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_4__["CallToAction"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center -mt-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PaoTable__WEBPACK_IMPORTED_MODULE_5__["default"], null))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Home); //background doesn't look good on desktop view. Blur it and add a dark filter over it
+//don't forget to change your password on all accounts after this
 
 /***/ }),
 

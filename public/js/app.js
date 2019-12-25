@@ -38383,7 +38383,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _pages_HomeP__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/HomeP */ "./resources/js/pages/HomeP.js");
-/* harmony import */ var _pages_FlashcardsP__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/FlashcardsP */ "./resources/js/pages/FlashcardsP.js");
+/* harmony import */ var _pages_FlashcardsPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/FlashcardsPage */ "./resources/js/pages/FlashcardsPage.js");
 // require('./bootstrap'); 
 
  //measn to rename it to Router. npm install --save react-router-dom -
@@ -38400,7 +38400,7 @@ function App() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/flashcards",
-    component: _pages_FlashcardsP__WEBPACK_IMPORTED_MODULE_4__["default"]
+    component: _pages_FlashcardsPage__WEBPACK_IMPORTED_MODULE_4__["default"]
   })));
 }
 
@@ -38420,25 +38420,46 @@ if (document.getElementById('react')) {
 /*!**********************************************!*\
   !*** ./resources/js/components/Flashcard.js ***!
   \**********************************************/
-/*! exports provided: default */
+/*! exports provided: FlashcardPhoneScreen, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlashcardPhoneScreen", function() { return FlashcardPhoneScreen; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SidebarL__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SidebarL */ "./resources/js/components/SidebarL.js");
+/* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Widgets */ "./resources/js/components/Widgets.js");
+
+
 
 
 var Flashcard = function Flashcard() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flashcards w-full py-20 bg-white inset-0 flex justify-center items-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flashcard w-3/4 h-70 bg-gray-100 shadow-md rounded"
+    className: "flashcard w-4/5 h-70 bg-gray-100 shadow-md rounded"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col justify-center items-center h-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Dennis Aleksandrov"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Dennis dfdfAleksandrov"))));
 };
 
+function FlashcardPhoneScreen() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-screen w-screen bg-gray-300"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col justify-center items-center h-screen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "bg-white h-70vh w-80pec rounded-lg shadow-lg"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center items-center h-full"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "hidden BlockIfOpen"
+  }, "Dennis Aleksandrov"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "BlockIfOpen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["WidgetStudyOption"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["WidgetOrderOption"], null))))));
+}
+;
 /* harmony default export */ __webpack_exports__["default"] = (Flashcard);
 
 /***/ }),
@@ -38521,7 +38542,15 @@ var Navbar = function Navbar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "menu icon"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })))));
+};
+
+var Navbar2 = function Navbar2() {
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sm:bg-black-transparent w-full z-50 fixed xl:static"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container mx-auto xl:rounded-b"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden xl:flex justify-end"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttons__WEBPACK_IMPORTED_MODULE_3__["StandardButton"], {
     value: "Settings",
@@ -38647,13 +38676,7 @@ var PaoTable = function PaoTable() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _images_full_moon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/full-moon.png */ "./resources/images/full-moon.png");
-/* harmony import */ var _images_full_moon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_full_moon_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/check.png */ "./resources/images/check.png");
-/* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_check_png__WEBPACK_IMPORTED_MODULE_3__);
-
-
+/* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Widgets */ "./resources/js/components/Widgets.js");
 
 
 
@@ -38663,44 +38686,10 @@ var SidebarLeft = function SidebarLeft() {
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "text-lg text-gray-800 flex lg:flex-col justify-around items-center w-full"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "flex lg:flex-col"
+      className: "flex lg:flex-col w-full justify-around items-center"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "flex items-center my-8 text-base"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "py-2 px-6 bg-blue-500 border border-blue-500"
-    }, "Study all"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "py-2 px-6 bg-blue-200 border border-blue-500"
-    }, "Study Stared")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "flex items-center my-10"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      className: "w-20 ml-4"
-    }, "Shuffle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: "./../../images/switch.png",
-      className: "ml-5 rotateimg270",
-      width: "40",
-      height: "40",
-      alt: "failed"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "mt-4"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      className: "text-gray-500 text-xl"
-    }, "Front of the card"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "flex items-center mb-10 mt-6"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      className: "w-20 ml-4"
-    }, "Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: _images_full_moon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-      className: "w-8 h-8 ml-5",
-      alt: "checkbox"
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "flex items-center my-10"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      className: "w-20 ml-4"
-    }, "Pao"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: _images_check_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-      className: "w-8 h-8 ml-5",
-      alt: "checkbox"
-    }))))))
+      className: "self-center hidden lg:block xxl:hidden"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetSearch"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetStudyOption"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetOrderOption"], null))))
   );
 };
 
@@ -38720,38 +38709,119 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Widgets */ "./resources/js/components/Widgets.js");
+
 
 
 
 var SidebarRight = function SidebarRight() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden xxl:block bg-blue-100 w-full sidebar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["WidgetSearch"], null));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SidebarRight);
+
+/***/ }),
+
+/***/ "./resources/js/components/Widgets.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Widgets.js ***!
+  \********************************************/
+/*! exports provided: WidgetStudyOption, WidgetOrderOption, WidgetSearch, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetStudyOption", function() { return WidgetStudyOption; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetOrderOption", function() { return WidgetOrderOption; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetSearch", function() { return WidgetSearch; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_full_moon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../images/full-moon.png */ "./resources/images/full-moon.png");
+/* harmony import */ var _images_full_moon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_full_moon_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/check.png */ "./resources/images/check.png");
+/* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_check_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+
+
+var WidgetShuffle = function WidgetShuffle() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center my-10"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "w-20 ml-4"
+  }, "Shuffle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "./../../images/switch.png",
+    className: "ml-5 rotateimg270",
+    width: "40",
+    height: "40",
+    alt: "failed"
+  }));
+};
+
+var WidgetStudyOption = function WidgetStudyOption() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center my-8 text-base"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "py-2 px-6 bg-blue-500 border border-blue-500"
+  }, "Study all"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "py-2 px-6 bg-blue-200 border border-blue-500"
+  }, "Study Stared"));
+};
+var WidgetOrderOption = function WidgetOrderOption() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "mt-4"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "text-gray-500 text-xl"
+  }, "Front of the card"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center mb-10 mt-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "w-20 ml-4"
+  }, "Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_full_moon_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    className: "w-8 h-8 ml-5",
+    alt: "checkbox"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center my-10"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "w-20 ml-4"
+  }, "Pao"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_check_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    className: "w-8 h-8 ml-5",
+    alt: "checkbox"
+  })));
+};
+var WidgetSearch = function WidgetSearch() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col w-full"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex self-center pt-12 pb-24"
+    className: "ml-12 mb-10"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex self-center pt-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Search "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "./../../images/magnifying-glass-finder.png",
     alt: ""
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: "border-b border-gray-800 bg-blue-100",
     type: "textarea"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "flashcards",
-    className: "h-10 ml-12 my-1 hover:opacity-50 w-32"
+    className: "h-10 ml-12 my-1 hover:opacity-50 w-40"
   }, "flashcard mode", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "w-10 border-b border-blue-800 absolute w-32"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "/home",
-    className: "h-10 ml-12 my-1 hover:opacity-50 w-32"
+    className: "h-10 ml-12 my-1 hover:opacity-50 w-40"
   }, "account settings", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "w-10 border-b border-green-300 absolute w-32"
-  })))));
+  }))));
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (SidebarRight);
+/* harmony default export */ __webpack_exports__["default"] = (WidgetShuffle);
 
 /***/ }),
 
@@ -38837,10 +38907,10 @@ function StandardButton(props) {
 
 /***/ }),
 
-/***/ "./resources/js/pages/FlashcardsP.js":
-/*!*******************************************!*\
-  !*** ./resources/js/pages/FlashcardsP.js ***!
-  \*******************************************/
+/***/ "./resources/js/pages/FlashcardsPage.js":
+/*!**********************************************!*\
+  !*** ./resources/js/pages/FlashcardsPage.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38871,14 +38941,8 @@ __webpack_require__.r(__webpack_exports__);
 var FlashCardsP = function FlashCardsP() {
   //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-screen w-screen bg-gray-300 sm:hidden"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center items-center h-screen"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-white h-80vh w-80pec rounded shadow-lg"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "flex justify-center items-center h-full"
-  }, "Dennis Aleksandrov")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sm:hidden"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["FlashcardPhoneScreen"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden sm:block"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container mx-auto"
@@ -38891,16 +38955,18 @@ var FlashCardsP = function FlashCardsP() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "xxl:px-0"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue rounded-t-full"
+    className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-t-full"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex lg:mx-12 xxl:mx-0 flex-col lg:bg-white"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col h-full lg:flex-row justify-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden bg-blue-100 w-full sidebar xxl:block"
+    className: "bg-blue-100 w-full xxl:block"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarL__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "h-full w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_8__["default"], null))))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_8__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-b-full"
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FlashCardsP);

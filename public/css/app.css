@@ -3979,8 +3979,8 @@ video {
   height: 100vh;
 }
 
-.h-80vh {
-  height: 80vh;
+.h-70vh {
+  height: 70vh;
 }
 
 .leading-none {
@@ -11753,6 +11753,10 @@ body {
   background: linear-gradient(90.65deg, #2CC3DB 23.67%, #17739B 106.16%);
 }
 
+.linearGradientBlue2 {
+  background: linear-gradient(90.65deg, #17739B 23.67%, #2CC3DB 106.16%);
+}
+
 .Trrr {
   background: linear-gradient(90.65deg, #2CC3DB 23.67%, #17739B 106.16%);
 }
@@ -15115,8 +15119,8 @@ body {
     height: 100vh;
   }
 
-  .sm\:h-80vh {
-    height: 80vh;
+  .sm\:h-70vh {
+    height: 70vh;
   }
 
   .sm\:leading-none {
@@ -26213,8 +26217,8 @@ body {
     height: 100vh;
   }
 
-  .md\:h-80vh {
-    height: 80vh;
+  .md\:h-70vh {
+    height: 70vh;
   }
 
   .md\:leading-none {
@@ -37311,8 +37315,8 @@ body {
     height: 100vh;
   }
 
-  .lg\:h-80vh {
-    height: 80vh;
+  .lg\:h-70vh {
+    height: 70vh;
   }
 
   .lg\:leading-none {
@@ -48409,8 +48413,8 @@ body {
     height: 100vh;
   }
 
-  .xl\:h-80vh {
-    height: 80vh;
+  .xl\:h-70vh {
+    height: 70vh;
   }
 
   .xl\:leading-none {
@@ -59507,8 +59511,8 @@ body {
     height: 100vh;
   }
 
-  .xxl\:h-80vh {
-    height: 80vh;
+  .xxl\:h-70vh {
+    height: 70vh;
   }
 
   .xxl\:leading-none {

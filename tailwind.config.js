@@ -21,7 +21,7 @@ module.exports = {
         'rerere': '24rem',
       },
       height: {
-        '80vh': '80vh',
+        '70vh': '70vh',
         '70': '17.5rem', 
       },
       borderRadius: {

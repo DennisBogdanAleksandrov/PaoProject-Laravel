@@ -11,7 +11,7 @@ export default function Logo() {
 }
 
 //user css to position the text purfectly and to slant it. 
-
+ 
 const pStyle = {
   'top': 15,
   'right': 0,

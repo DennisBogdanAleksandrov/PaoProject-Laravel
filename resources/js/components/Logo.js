@@ -3,7 +3,7 @@ import LogoImg from './../../images/playing-cards-png-11-original.png';
 
 export default function Logo() {
   return (
-    <div className="h-32 w-32 mt-24 mb-20 mx-auto">
+    <div className="h-32 w-32 mx-auto">
       <div className="relative">
         <img src={LogoImg} className="" alt="Logo image"/>
         <p className="absolute mt-12 ml-16 text-white text-sm font-RockSalt" style={pStyle}>Pao</p>

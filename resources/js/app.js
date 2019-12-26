@@ -4,8 +4,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'; //measn to rename it to Router. npm install --save react-router-dom -
 import ReactDOM from 'react-dom';
-import Home from './pages/HomeP';
+import Home from './pages/HomePage';
 import FlashcardsPage from './pages/FlashcardsPage';
+import SettingsP from './pages/SettingsPage';
 
 
 
@@ -15,6 +16,7 @@ function App(){
       <div>
         <Route exact path="/home" component={Home} />
         <Route exact path="/flashcards" component={FlashcardsPage} />
+        <Route exact path="/settings" component={SettingsP} />
       </div>
     </Router>
   )

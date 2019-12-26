@@ -38313,6 +38313,17 @@ module.exports = "/images/full-moon.png?05b0e63bbbcefb170ff33e52454ec877";
 
 /***/ }),
 
+/***/ "./resources/images/gear-option.png":
+/*!******************************************!*\
+  !*** ./resources/images/gear-option.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/gear-option.png?56ec2177935a17cae9a63afea6ca66a7";
+
+/***/ }),
+
 /***/ "./resources/images/heart.svg":
 /*!************************************!*\
   !*** ./resources/images/heart.svg ***!
@@ -38332,6 +38343,17 @@ module.exports = "/images/heart.svg?630c64003bf303596caef179a2e712ad";
 /***/ (function(module, exports) {
 
 module.exports = "/images/menu-symbol-of-three-parallel-lines.png?66b87adf69676e677bf690334119d0a1";
+
+/***/ }),
+
+/***/ "./resources/images/mycat.jpg":
+/*!************************************!*\
+  !*** ./resources/images/mycat.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/mycat.jpg?51e134db8587716bdae6b93254e75c26";
 
 /***/ }),
 
@@ -38393,11 +38415,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _pages_HomeP__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/HomeP */ "./resources/js/pages/HomeP.js");
+/* harmony import */ var _pages_HomePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/HomePage */ "./resources/js/pages/HomePage.js");
 /* harmony import */ var _pages_FlashcardsPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/FlashcardsPage */ "./resources/js/pages/FlashcardsPage.js");
+/* harmony import */ var _pages_SettingsPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/SettingsPage */ "./resources/js/pages/SettingsPage.js");
 // require('./bootstrap'); 
 
  //measn to rename it to Router. npm install --save react-router-dom -
+
 
 
 
@@ -38407,11 +38431,15 @@ function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/home",
-    component: _pages_HomeP__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _pages_HomePage__WEBPACK_IMPORTED_MODULE_3__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/flashcards",
     component: _pages_FlashcardsPage__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/settings",
+    component: _pages_SettingsPage__WEBPACK_IMPORTED_MODULE_5__["default"]
   })));
 }
 
@@ -38493,7 +38521,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Logo() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-32 w-32 mt-24 mb-20 mx-auto"
+    className: "h-32 w-32 mx-auto"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "relative"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -38521,12 +38549,13 @@ var pStyle = {
 /*!*******************************************!*\
   !*** ./resources/js/components/Navbar.js ***!
   \*******************************************/
-/*! exports provided: Navbar, default */
+/*! exports provided: Navbar, Navbar2, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Navbar", function() { return Navbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Navbar2", function() { return Navbar2; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/settings.png */ "./resources/images/settings.png");
@@ -38605,23 +38634,29 @@ function (_React$Component) {
   return Navbar;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 ;
-
 var Navbar2 = function Navbar2() {
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sm:bg-black-transparent w-full z-50 fixed xl:static"
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "linearGradientBlue2 lg:bg-black-transparent static"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto xl:rounded-b"
+    className: "container mx-auto xl:rounded-b h-20"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex w-full h-full items-center justify-end"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "xl:hidden right-0",
+    src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "50",
+    height: "50",
+    alt: "Menu icon"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden xl:flex justify-end"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttons__WEBPACK_IMPORTED_MODULE_3__["StandardButton"], {
     value: "Settings",
-    styleName: "bg-blue-400 xl:m-2 border border-white text-white"
+    styleName: "bg-blue-400 border border-white text-white"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttons__WEBPACK_IMPORTED_MODULE_3__["StandardButton"], {
     value: "register",
-    styleName: "bg-white xl:mr-8 xl:m-2"
-  }))));
+    styleName: "bg-white "
+  })))));
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (Navbar); //{/* <Link to="/page1">Page1</Link> */}
 //for images to work you'd import them and put it into jsx within a div and set wisth and height on that parent div.
 
@@ -38966,7 +39001,7 @@ function CallToAction() {
 ;
 function StandardButton(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "px-10 py-2 my-5 mx-2 rounded-sm text-xl ".concat(props.styleName)
+    className: "px-10 py-2 mx-2 rounded-sm text-xl ".concat(props.styleName)
   }, props.value);
 }
 ;
@@ -39159,10 +39194,10 @@ var FlashCardsP = function FlashCardsP() {
 
 /***/ }),
 
-/***/ "./resources/js/pages/HomeP.js":
-/*!*************************************!*\
-  !*** ./resources/js/pages/HomeP.js ***!
-  \*************************************/
+/***/ "./resources/js/pages/HomePage.js":
+/*!****************************************!*\
+  !*** ./resources/js/pages/HomePage.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39209,6 +39244,66 @@ var Home = function Home() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/pages/SettingsPage.js":
+/*!********************************************!*\
+  !*** ./resources/js/pages/SettingsPage.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/components/Navbar.js");
+/* harmony import */ var _images_mycat_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/mycat.jpg */ "./resources/images/mycat.jpg");
+/* harmony import */ var _images_mycat_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_mycat_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/gear-option.png */ "./resources/images/gear-option.png");
+/* harmony import */ var _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_gear_option_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Logo */ "./resources/js/components/Logo.js");
+
+
+
+
+
+
+var SettingsP = function SettingsP() {
+  /* //! all I got to do ere is change the of the images, set the blue slanted background/div and make it responsive. */
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "backgroundImgSettings h-screen"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["Navbar2"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col justify-around items-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-around w-full"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Username"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Pao systems"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Email")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: ""
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_mycat_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: 50,
+    hight: 50,
+    alt: "cat wiskers"
+  }), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-around w-full"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    classNmae: "w-24 h-24 "
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    width: 50,
+    hight: 50,
+    alt: "Image of a gear"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change wallpaper"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change username"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-around w-full"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Contacts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SettingsP);
 
 /***/ }),
 

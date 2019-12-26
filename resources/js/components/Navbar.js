@@ -5,6 +5,7 @@ import hamburgerMenu from './../../images/menu-symbol-of-three-parallel-lines.pn
 import { StandardButton } from './buttons';
 import SettingsWindow from './popup windows comps/SettingsWindow';
 
+
 export class Navbar extends React.Component {
 
   handleClick () {
@@ -34,22 +35,27 @@ export class Navbar extends React.Component {
   }
 };
 
-const Navbar2 = () => {
-   <div className="sm:bg-black-transparent w-full z-50 fixed xl:static">
-      <div className="container mx-auto xl:rounded-b">
+export const Navbar2 = () => {
+  return (
+   <div className="linearGradientBlue2 lg:bg-black-transparent static">
+      <div className="container mx-auto xl:rounded-b h-20">
+        <div className="flex w-full h-full items-center justify-end">
+        <img className="xl:hidden right-0" src={hamburgerMenu} width='50' height='50' alt="Menu icon"/>
         <div className="hidden xl:flex justify-end">
-        <StandardButton
-          value="Settings"
-          styleName="bg-blue-400 xl:m-2 border border-white text-white"
-        />
-        <StandardButton
-          value="register"
-          styleName="bg-white xl:mr-8 xl:m-2"
-        />
+          <StandardButton
+            value="Settings"
+            styleName="bg-blue-400 border border-white text-white"
+          />
+          <StandardButton
+            value="register"
+            styleName="bg-white "
+          />
+        </div>
       </div>
     </div>
   </div>
-}
+  )
+};
 
 export default Navbar;
 

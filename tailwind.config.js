@@ -29,15 +29,13 @@ module.exports = {
       },
       borderRadius: {
         "2rem": '2rem',
+        'xl': '2rem',
       },
       fontFamily: {
         "RockSalt": 'RockSalt',
       },
       screens: {
         "xxl": '1500px',
-      },
-      borderRadius: {
-        'xl': '2rem',
       },
     }
   },

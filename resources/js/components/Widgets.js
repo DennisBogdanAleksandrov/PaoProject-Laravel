@@ -2,19 +2,24 @@ import React from 'react';
 import circle from './../../images/full-moon.png';
 import checkCircle from './../../images/check.png';
 import { Link } from 'react-router-dom';
+import switchImg from './../../images/switch.png';
+import styled from "@emotion/styled";
 
-const WidgetShuffle = () => {
+export const WidgetShuffle = () => {
   return (
     <div className="flex items-center my-10">
       <span className="w-20 ml-4">Shuffle</span>
-      <img src='./../../images/switch.png' className="ml-5 rotateimg270" width="40" height="40" alt="failed"/>
+      {/* <img src={} className="ml-5 rotateimg270 z-0" alt="switch"/> */}
+
+        <img src={switchImg} className="ml-5" width="40" height="40" alt="checkbox"/>
+
     </div>
   );
 };
 
 export const WidgetStudyOption = () => {
   return (
-    <div className="flex items-center my-8 text-base">
+    <div className="flex items-center text-base">
       <div className="py-2 px-6 bg-blue-500 border border-blue-500">
           Study all
       </div>
@@ -45,28 +50,12 @@ export const WidgetOrderOption = () => {
 
 export const WidgetSearch = () => {
   return (
-    <div className="flex flex-col w-full">
-        <div className="ml-12 mb-10">
 
           <div className="flex self-center pt-12">
             <p>Search </p>
             <img src="./../../images/magnifying-glass-finder.png" alt=""/>
-            <input className="border-b border-gray-800 bg-blue-100" type="textarea"/>
+            <input className="border-b border-gray-800 bg-transparent" type="text"/>
           </div>
-
-        </div>
-        <div className="flex flex-col">
-        
-        <Link to="flashcards" className="h-10 ml-12 my-1 hover:opacity-50 w-40">flashcard mode
-          <div className="w-10 border-b border-blue-800 absolute w-32"></div>
-        </Link>
-
-        <Link to="/home" className="h-10 ml-12 my-1 hover:opacity-50 w-40">account settings
-          <div className="w-10 border-b border-green-300 absolute w-32"></div>
-        </Link>
-
-        </div>
-      </div>
 
   )
 }

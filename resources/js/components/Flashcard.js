@@ -26,7 +26,8 @@ export function FlashcardPhoneScreen () {
               Dennis Aleksandrov
             </span>
             <div className="BlockIfOpen">
-
+              {/* //!*? We are going to have to make it so you could choose from what list of cards to study; Person, action or object associated to the number  */}
+            
             <WidgetStudyOption />
             <WidgetShuffle />
             <WidgetOrderOption />

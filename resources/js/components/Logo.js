@@ -3,12 +3,14 @@ import LogoImg from './../../images/playing-cards-png-11-original.png';
 
 export default function Logo() {
   return (
-    <div className="relative">
-      <img src={LogoImg} className="" alt="Logo image"/>
-      <p className="absolute mt-12 ml-16 text-white text-sm font-RockSalt" style={pStyle}>Pao</p>
+    <div className="h-32 w-32 mt-24 mb-20 mx-auto">
+      <div className="relative">
+        <img src={LogoImg} className="" alt="Logo image"/>
+        <p className="absolute mt-12 ml-16 text-white text-sm font-RockSalt" style={pStyle}>Pao</p>
+      </div>
     </div>
   )
-}
+};
 
 //user css to position the text purfectly and to slant it. 
  
@@ -19,4 +21,6 @@ const pStyle = {
   'left': -10,
   'transform': 'rotate(20deg)'
 }
+
+
 

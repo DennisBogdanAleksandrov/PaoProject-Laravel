@@ -8,11 +8,20 @@ import styled from "@emotion/styled";
 import SidebarLeft from '../components/SidebarL';
 import SidebarRight from '../components/SidebarR';
 import Flashcard, { FlashcardPhoneScreen } from '../components/Flashcard';
+import SettingsWindow from '../components/popup windows comps/SettingsWindow';
+import MenuWindow from '../components/popup windows comps/MenuWindow';
+
 
 
 const FlashCardsP = () => { //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
   return (
-    <div>
+    <div className="relative">
+      <div className="hidden z-50" id="settingWindow">
+        <SettingsWindow />
+      </div>
+      <div className="hidden" id="menuWindow">
+        <MenuWindow />
+      </div>
       <Navbar />
       <div className="sm:hidden">
         <FlashcardPhoneScreen />

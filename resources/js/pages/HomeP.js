@@ -16,9 +16,7 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex justify-center h-80vh">
           <div className="flex flex-col">
-            <div className="h-32 w-32 mt-24 mb-20 mx-auto">
-              <Logo />
-            </div>
+            <Logo />
             <CallToAction /> 
           </div> 
         </div>

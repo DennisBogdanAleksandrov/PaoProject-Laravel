@@ -38368,6 +38368,17 @@ module.exports = "/images/spades.svg?a768481c43d39f0e4fc54482c2f636be";
 
 /***/ }),
 
+/***/ "./resources/images/switch.png":
+/*!*************************************!*\
+  !*** ./resources/images/switch.png ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/switch.png?70f087fefa6378eb1db87dc7ab453e48";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -38482,6 +38493,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function Logo() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "h-32 w-32 mt-24 mb-20 mx-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "relative"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_playing_cards_png_11_original_png__WEBPACK_IMPORTED_MODULE_1___default.a,
@@ -38490,8 +38503,9 @@ function Logo() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "absolute mt-12 ml-16 text-white text-sm font-RockSalt",
     style: pStyle
-  }, "Pao"));
-} //user css to position the text purfectly and to slant it. 
+  }, "Pao")));
+}
+; //user css to position the text purfectly and to slant it. 
 
 var pStyle = {
   'top': 15,
@@ -38507,11 +38521,12 @@ var pStyle = {
 /*!*******************************************!*\
   !*** ./resources/js/components/Navbar.js ***!
   \*******************************************/
-/*! exports provided: default */
+/*! exports provided: Navbar, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Navbar", function() { return Navbar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _images_settings_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/settings.png */ "./resources/images/settings.png");
@@ -38519,31 +38534,77 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/menu-symbol-of-three-parallel-lines.png */ "./resources/images/menu-symbol-of-three-parallel-lines.png");
 /* harmony import */ var _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _buttons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttons */ "./resources/js/components/buttons.js");
+/* harmony import */ var _popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./popup windows comps/SettingsWindow */ "./resources/js/components/popup windows comps/SettingsWindow.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
  // import { Link } from 'react-router-dom';
 
 
 
 
 
-var Navbar = function Navbar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sm:bg-black-transparent w-full z-50 fixed xl:static"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto xl:rounded-b"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-between xl:hidden"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-12 w-12 m-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    alt: "settings icon"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-12 w-12 m-4"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "menu icon"
-  })))));
-};
+var Navbar =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Navbar, _React$Component);
+
+  function Navbar() {
+    _classCallCheck(this, Navbar);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Navbar).apply(this, arguments));
+  }
+
+  _createClass(Navbar, [{
+    key: "handleClick",
+    value: function handleClick() {
+      console.log('success');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "relative z-10"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bg-black-transparent xxl:hidden w-full z-50 fixed"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container mx-auto xl:rounded-b"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex justify-between"
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-12 w-12 m-4 hover:bg-blue-800 p-2",
+        onClick: this.handleClick
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+        alt: "settings icon"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-12 w-12 m-4 hover:bg-blue-800 p-2",
+        onClick: this.handleClick
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+        alt: "menu icon"
+      }))))));
+    }
+  }]);
+
+  return Navbar;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+;
 
 var Navbar2 = function Navbar2() {
   react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -38677,6 +38738,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Widgets */ "./resources/js/components/Widgets.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -38687,9 +38750,9 @@ var SidebarLeft = function SidebarLeft() {
       className: "text-lg text-gray-800 flex lg:flex-col justify-around items-center w-full"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "flex lg:flex-col w-full justify-around items-center"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "self-center hidden lg:block xxl:hidden"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetSearch"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetStudyOption"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetOrderOption"], null))))
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetSearch"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "mt-8"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetStudyOption"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_1__["WidgetOrderOption"], null))))
   );
 };
 
@@ -38717,7 +38780,23 @@ __webpack_require__.r(__webpack_exports__);
 var SidebarRight = function SidebarRight() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden xxl:block bg-blue-100 w-full sidebar"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["WidgetSearch"], null));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col w-full"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ml-12 mb-10"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_2__["WidgetSearch"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "flashcards",
+    className: "h-10 ml-12 my-1 hover:opacity-50 w-40 mt-10"
+  }, "flashcard mode", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-10 border-b border-blue-800 absolute w-32"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/home",
+    className: "h-10 ml-12 my-1 hover:opacity-50 w-40"
+  }, "account settings", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "w-10 border-b border-green-300 absolute w-32"
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SidebarRight);
@@ -38728,11 +38807,12 @@ var SidebarRight = function SidebarRight() {
 /*!********************************************!*\
   !*** ./resources/js/components/Widgets.js ***!
   \********************************************/
-/*! exports provided: WidgetStudyOption, WidgetOrderOption, WidgetSearch, default */
+/*! exports provided: WidgetShuffle, WidgetStudyOption, WidgetOrderOption, WidgetSearch, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetShuffle", function() { return WidgetShuffle; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetStudyOption", function() { return WidgetStudyOption; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetOrderOption", function() { return WidgetOrderOption; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WidgetSearch", function() { return WidgetSearch; });
@@ -38743,6 +38823,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../images/check.png */ "./resources/images/check.png");
 /* harmony import */ var _images_check_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_check_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _images_switch_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../images/switch.png */ "./resources/images/switch.png");
+/* harmony import */ var _images_switch_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_switch_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+
 
 
 
@@ -38754,17 +38838,16 @@ var WidgetShuffle = function WidgetShuffle() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "w-20 ml-4"
   }, "Shuffle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "./../../images/switch.png",
-    className: "ml-5 rotateimg270",
+    src: _images_switch_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    className: "ml-5",
     width: "40",
     height: "40",
-    alt: "failed"
+    alt: "checkbox"
   }));
 };
-
 var WidgetStudyOption = function WidgetStudyOption() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex items-center my-8 text-base"
+    className: "flex items-center text-base"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "py-2 px-6 bg-blue-500 border border-blue-500"
   }, "Study all"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -38796,30 +38879,14 @@ var WidgetOrderOption = function WidgetOrderOption() {
 };
 var WidgetSearch = function WidgetSearch() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ml-12 mb-10"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex self-center pt-12"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Search "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "./../../images/magnifying-glass-finder.png",
     alt: ""
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-b border-gray-800 bg-blue-100",
-    type: "textarea"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "flashcards",
-    className: "h-10 ml-12 my-1 hover:opacity-50 w-40"
-  }, "flashcard mode", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-10 border-b border-blue-800 absolute w-32"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "/home",
-    className: "h-10 ml-12 my-1 hover:opacity-50 w-40"
-  }, "account settings", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-10 border-b border-green-300 absolute w-32"
-  }))));
+    className: "border-b border-gray-800 bg-transparent",
+    type: "text"
+  }));
 };
 /* harmony default export */ __webpack_exports__["default"] = (WidgetShuffle);
 
@@ -38907,6 +38974,113 @@ function StandardButton(props) {
 
 /***/ }),
 
+/***/ "./resources/js/components/popup windows comps/MenuWindow.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/popup windows comps/MenuWindow.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+var MenuWindow = function MenuWindow() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "absolute h-screen w-screen bg-black-transparent"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col h-full items-center justify-around justify-center font-RockSalt"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col h-30vh justify-between"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/home",
+    className: "bg-blue-500 w-18rem py-4 my-2 text-white rounded-full hover:shadow-inner shadow hover:bg-blue-600 text-center"
+  }, " Pao Sets "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/flashcards",
+    className: "bg-yellow-500 w-18rem py-4 my-2 text-white rounded-full hover:shadow-inner shadow hover:bg-yellow-600 text-center"
+  }, " Flashcards "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/home",
+    className: "bg-red-500 w-18rem py-4 my-2 text-white rounded-full hover:shadow-inner shadow hover:bg-red-600 text-center"
+  }, " Account Settings "))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MenuWindow);
+
+/***/ }),
+
+/***/ "./resources/js/components/popup windows comps/SettingsWindow.js":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/popup windows comps/SettingsWindow.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Logo */ "./resources/js/components/Logo.js");
+/* harmony import */ var _images_switch_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../../images/switch.png */ "./resources/images/switch.png");
+/* harmony import */ var _images_switch_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_switch_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Widgets__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../Widgets */ "./resources/js/components/Widgets.js");
+
+
+
+
+
+var SettingsWindow = function SettingsWindow() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "z-20 absolute bg-black-transparent2 w-screen h-screen flex justify-center items-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "font-RockSalt font-normal bg-white w-3/4 rounded-xl shadow-lg relative"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "bg-gray-800 rounded-full w-8 h-8 absolute right-0 m-4"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col justify-center h-50vh justify-around mb-6"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "scaledown -mb-12 -mt-24"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center -my-12"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Person"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "rotateimg270",
+    src: _images_switch_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "40",
+    alt: "switch logo"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Action"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "rotateimg270",
+    src: _images_switch_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "40",
+    alt: "switch logo"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Object"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "rotateimg270",
+    src: _images_switch_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    width: "40",
+    alt: "switch logo"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_3__["WidgetSearch"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex justify-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Widgets__WEBPACK_IMPORTED_MODULE_3__["WidgetStudyOption"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bg-gray-400 rounded-full w-64 mx-auto py-2 hover:opacity-75 hover:text-gray-700 font-semibold"
+  }, "Shuffle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bg-gray-400 rounded-full w-64 mx-auto py-2 hover:opacity-75 hover:text-gray-700 font-semibold"
+  }, "Edit Mode"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "bg-blue2-nice rounded-full w-32 mx-auto py-2 hover:opacity-75 font-semibold text-white"
+  }, "Done"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SettingsWindow);
+
+/***/ }),
+
 /***/ "./resources/js/pages/FlashcardsPage.js":
 /*!**********************************************!*\
   !*** ./resources/js/pages/FlashcardsPage.js ***!
@@ -38927,6 +39101,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SidebarL__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SidebarL */ "./resources/js/components/SidebarL.js");
 /* harmony import */ var _components_SidebarR__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/SidebarR */ "./resources/js/components/SidebarR.js");
 /* harmony import */ var _components_Flashcard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Flashcard */ "./resources/js/components/Flashcard.js");
+/* harmony import */ var _components_popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/popup windows comps/SettingsWindow */ "./resources/js/components/popup windows comps/SettingsWindow.js");
+/* harmony import */ var _components_popup_windows_comps_MenuWindow__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/popup windows comps/MenuWindow */ "./resources/js/components/popup windows comps/MenuWindow.js");
+
+
 
 
 
@@ -38940,7 +39118,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var FlashCardsP = function FlashCardsP() {
   //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "relative"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "hidden z-50",
+    id: "settingWindow"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "hidden",
+    id: "menuWindow"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_MenuWindow__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sm:hidden"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["FlashcardPhoneScreen"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden sm:block"
@@ -39007,9 +39193,7 @@ var Home = function Home() {
     className: "flex justify-center h-80vh"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-32 w-32 mt-24 mb-20 mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_2__["CallToAction"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_2__["CallToAction"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "md:px-24 xxl:px-0"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hidden lg:block h-24 linearGradientBlue rounded-t-full"

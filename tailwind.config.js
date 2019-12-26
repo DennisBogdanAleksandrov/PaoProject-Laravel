@@ -10,6 +10,7 @@ module.exports = {
           blue2: {
             'transparent': 'rgba(52, 95, 205, 0.56)',
             'transparent2': 'rgba(52, 95, 205, 0.6)',
+            'nice': '#568CFF',
           },
       },
       margin: {
@@ -18,9 +19,11 @@ module.exports = {
       width: {
         '30pec': '30vw',
         '80pec': '80vw',
-        'rerere': '24rem',
+        '18rem': '18rem',
       },
       height: {
+        "30vh": '30vh',
+        '50vh': '50vh',
         '70vh': '70vh',
         '70': '17.5rem', 
       },
@@ -32,6 +35,9 @@ module.exports = {
       },
       screens: {
         "xxl": '1500px',
+      },
+      borderRadius: {
+        'xl': '2rem',
       },
     }
   },

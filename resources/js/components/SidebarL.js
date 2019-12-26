@@ -1,5 +1,6 @@
 import React from 'react';
 import WidgetShuffle, { WidgetOrderOption, WidgetStudyOption, WidgetSearch } from './Widgets';
+import {Link} from 'react-router-dom';
 
 const SidebarLeft = () => {
   return (/* //! hidden here */
@@ -7,11 +8,14 @@ const SidebarLeft = () => {
 
           
             <div className="flex lg:flex-col w-full justify-around items-center">
-              <div className="self-center hidden lg:block xxl:hidden">
+
+              <div>
                 <WidgetSearch />
               </div>
-              
-              <WidgetStudyOption />
+              <div className="mt-8">
+                <WidgetStudyOption />
+              </div>
+
               <WidgetShuffle />
 
               <div>

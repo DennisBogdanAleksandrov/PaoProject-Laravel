@@ -3,25 +3,35 @@ import React from 'react';
 import settingIcon from "../../images/settings.png";
 import hamburgerMenu from './../../images/menu-symbol-of-three-parallel-lines.png';
 import { StandardButton } from './buttons';
+import SettingsWindow from './popup windows comps/SettingsWindow';
 
+export class Navbar extends React.Component {
 
-const Navbar = () => {
-  return (
-    <div className="sm:bg-black-transparent w-full z-50 fixed xl:static">
-      <div className="container mx-auto xl:rounded-b">
-        
-        <div className="flex justify-between xl:hidden">
-          <div className="h-12 w-12 m-4">
-            <img src={settingIcon} alt="settings icon" />
+  handleClick () {
+    console.log('success');
+  }
+  
+  render () {
+    return (
+      <div className="relative z-10">
+      <div className="bg-black-transparent xxl:hidden w-full z-50 fixed">
+        <div className="container mx-auto xl:rounded-b">
+          
+          <div className="flex justify-between"> {/* //! onclick then element turns from hidden to block */}  
+            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2" onClick={this.handleClick}>
+              <img src={settingIcon} alt="settings icon" />
+            </div>
+            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2" onClick={this.handleClick}>
+              <img src={hamburgerMenu} alt="menu icon" />
+            </div>
           </div>
-          <div className="h-12 w-12 m-4">
-            <img src={hamburgerMenu} alt="menu icon" />
-          </div>
+
         </div>
-
       </div>
+      
     </div>
-  );
+    );
+  }
 };
 
 const Navbar2 = () => {

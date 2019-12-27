@@ -15,9 +15,11 @@ module.exports = {
       },
       margin: {
         '1rem': '.1rem',
+        '800': '50rem',
       },
       width: {
         '30pec': '30vw',
+        '50pec': '50vw',
         '80pec': '80vw',
         '18rem': '18rem',
       },

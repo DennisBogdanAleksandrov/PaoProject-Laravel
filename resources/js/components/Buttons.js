@@ -44,7 +44,7 @@ export function CallToAction() {
 
 export function StandardButton(props) {
   return (
-    <div className={`px-10 py-2 mx-2 rounded-sm text-xl ${props.styleName}`}>{props.value}</div>
+    <div className={`px-10 py-2 mx-2 rounded-sm text-xl text-center ${props.styleName}`}>{props.value}</div>
     
   );
 };

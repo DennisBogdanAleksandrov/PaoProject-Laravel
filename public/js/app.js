@@ -38574,13 +38574,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
  // import { Link } from 'react-router-dom';
 
@@ -38590,40 +38592,53 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var Navbar =
 /*#__PURE__*/
-function (_React$Component) {
-  _inherits(Navbar, _React$Component);
+function (_Component) {
+  _inherits(Navbar, _Component);
 
   function Navbar() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Navbar).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Navbar)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      on: true
+    });
+
+    return _this;
   }
 
   _createClass(Navbar, [{
-    key: "handleClick",
-    value: function handleClick() {
-      console.log('success');
+    key: "clickFunc",
+    value: function clickFunc() {
+      this.props.handleClick('workd');
     }
   }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "relative z-10"
+        className: "relative"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "bg-black-transparent xxl:hidden w-full z-50 fixed"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container mx-auto xl:rounded-b"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.stateValue, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex justify-between"
       }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "h-12 w-12 m-4 hover:bg-blue-800 p-2",
-        onClick: this.handleClick
+        onClick: this.clickFunc
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _images_settings_png__WEBPACK_IMPORTED_MODULE_1___default.a,
         alt: "settings icon"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "h-12 w-12 m-4 hover:bg-blue-800 p-2",
-        onClick: this.handleClick
+        className: "h-12 w-12 m-4 hover:bg-blue-800 p-2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
         alt: "menu icon"
@@ -38632,17 +38647,17 @@ function (_React$Component) {
   }]);
 
   return Navbar;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 ;
 var Navbar2 = function Navbar2() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "linearGradientBlue2 lg:bg-black-transparent static"
+    className: "linearGradientBlue lg:bg-black-transparent static"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container mx-auto xl:rounded-b h-20"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex w-full h-full items-center justify-end"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "xl:hidden right-0",
+    className: "xl:hidden right-0 mr-5",
     src: _images_menu_symbol_of_three_parallel_lines_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     width: "50",
     height: "50",
@@ -38838,6 +38853,87 @@ var SidebarRight = function SidebarRight() {
 
 /***/ }),
 
+/***/ "./resources/js/components/Toggle.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Toggle.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Toggle; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+var Toggle =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Toggle, _Component);
+
+  function Toggle() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Toggle);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Toggle)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      on: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "toggle", function () {
+      _this.setState({
+        on: !_this.state.on
+      });
+    });
+
+    return _this;
+  }
+
+  _createClass(Toggle, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", this.state.on && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Toggle me"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        onClick: this.toggle
+      }, "Show/Hide"));
+    }
+  }]);
+
+  return Toggle;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Widgets.js":
 /*!********************************************!*\
   !*** ./resources/js/components/Widgets.js ***!
@@ -39001,7 +39097,7 @@ function CallToAction() {
 ;
 function StandardButton(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "px-10 py-2 mx-2 rounded-sm text-xl ".concat(props.styleName)
+    className: "px-10 py-2 mx-2 rounded-sm text-xl text-center ".concat(props.styleName)
   }, props.value);
 }
 ;
@@ -39120,11 +39216,12 @@ var SettingsWindow = function SettingsWindow() {
 /*!**********************************************!*\
   !*** ./resources/js/pages/FlashcardsPage.js ***!
   \**********************************************/
-/*! exports provided: default */
+/*! exports provided: FlashCardsP, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlashCardsP", function() { return FlashCardsP; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
@@ -39138,6 +39235,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Flashcard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Flashcard */ "./resources/js/components/Flashcard.js");
 /* harmony import */ var _components_popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/popup windows comps/SettingsWindow */ "./resources/js/components/popup windows comps/SettingsWindow.js");
 /* harmony import */ var _components_popup_windows_comps_MenuWindow__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/popup windows comps/MenuWindow */ "./resources/js/components/popup windows comps/MenuWindow.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -39151,45 +39267,86 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var FlashCardsP = function FlashCardsP() {
+var FlashCardsP =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(FlashCardsP, _Component);
+
   //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "relative"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden z-50",
-    id: "settingWindow"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden",
-    id: "menuWindow"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_MenuWindow__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "sm:hidden"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["FlashcardPhoneScreen"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden sm:block"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center h-80vh"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-32 w-32 mt-24 mb-20 mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "xxl:px-0"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-t-full"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex lg:mx-12 xxl:mx-0 flex-col lg:bg-white"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col h-full lg:flex-row justify-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "bg-blue-100 w-full xxl:block"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarL__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-full w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_8__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-b-full"
-  }))));
-};
+  function FlashCardsP(props) {
+    var _this;
 
+    _classCallCheck(this, FlashCardsP);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(FlashCardsP).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_this), "state", {
+      on: false
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleClick", function () {
+      _this.setState({
+        on: !_this.state.on
+      });
+    });
+
+    _this.handlingC = _this.handlingC.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(FlashCardsP, [{
+    key: "handlingC",
+    //? telling it to set state oposite of on.
+    value: function handlingC(test) {
+      console.log(test);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "relative"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hidden",
+        id: "settingWindow"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_SettingsWindow__WEBPACK_IMPORTED_MODULE_10__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hidden",
+        id: "menuWindow"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_popup_windows_comps_MenuWindow__WEBPACK_IMPORTED_MODULE_11__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        stateValue: "123",
+        handleClick: this.handlingC
+      }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sm:hidden"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["FlashcardPhoneScreen"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hidden sm:block"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container mx-auto"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex justify-center h-80vh"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex flex-col"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-32 w-32 mt-24 mb-20 mx-auto"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], null))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "xxl:px-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-t-full"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex lg:mx-12 xxl:mx-0 flex-col lg:bg-white"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex flex-col h-full lg:flex-row justify-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "bg-blue-100 w-full xxl:block"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarL__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-full w-full"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Flashcard__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_8__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "h-24 lg:mx-12 xxl:mx-0 linearGradientBlue2 rounded-b-full"
+      }))));
+    }
+  }]);
+
+  return FlashCardsP;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+;
 /* harmony default export */ __webpack_exports__["default"] = (FlashCardsP);
 
 /***/ }),
@@ -39198,11 +39355,12 @@ var FlashCardsP = function FlashCardsP() {
 /*!****************************************!*\
   !*** ./resources/js/pages/HomePage.js ***!
   \****************************************/
-/*! exports provided: default */
+/*! exports provided: Home, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/components/Navbar.js");
@@ -39212,6 +39370,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
 /* harmony import */ var _components_SidebarR__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/SidebarR */ "./resources/js/components/SidebarR.js");
 /* harmony import */ var _components_SidebarL__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/SidebarL */ "./resources/js/components/SidebarL.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
@@ -39221,28 +39396,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container mx-auto"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center h-80vh"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_2__["CallToAction"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "md:px-24 xxl:px-0"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden lg:block h-24 linearGradientBlue rounded-t-full"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col lg:bg-white"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "lg:flex justify-center"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hidden bg-blue-100 w-full sidebar xxl:block"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarL__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "xxl:px-24"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PaoTable__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_6__["default"], null)))));
-};
+var Home =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Home, _Component);
 
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Home).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container mx-auto"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex justify-center h-80vh"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex flex-col"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_2__["CallToAction"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "md:px-24 xxl:px-0"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hidden lg:block h-24 linearGradientBlue rounded-t-full"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "flex flex-col lg:bg-white"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "lg:flex justify-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hidden bg-blue-100 w-full sidebar xxl:block"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarL__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "xxl:px-24"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PaoTable__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SidebarR__WEBPACK_IMPORTED_MODULE_6__["default"], null)))));
+    }
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+;
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
@@ -39264,6 +39456,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../images/gear-option.png */ "./resources/images/gear-option.png");
 /* harmony import */ var _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_gear_option_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Logo */ "./resources/js/components/Logo.js");
+/* harmony import */ var _components_buttons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/buttons */ "./resources/js/components/buttons.js");
+/* harmony import */ var _components_Toggle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Toggle */ "./resources/js/components/Toggle.js");
+
+
 
 
 
@@ -39273,34 +39469,44 @@ __webpack_require__.r(__webpack_exports__);
 var SettingsP = function SettingsP() {
   /* //! all I got to do ere is change the of the images, set the blue slanted background/div and make it responsive. */
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "backgroundImgSettings h-screen"
+    className: "h-full"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_1__["Navbar2"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-around items-center"
+    className: "flex flex-col bg-blue-100 justify-around items-center font-RockSalt leading-loose"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex items-center justify-around w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Username"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Pao systems"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Email")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: ""
+    className: "flex items-center mt-20"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_mycat_jpg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    width: 50,
-    hight: 50,
+    className: "rounded-full h-64 w-64 object-cover ",
     alt: "cat wiskers"
-  }), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex items-center justify-around w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    classNmae: "w-24 h-24 "
+  }), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-around md:w-50pec lg:w-full my-20"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "h-0 w-0 lg:h-full lg:w-64 object-contain",
     src: _images_gear_option_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    width: 50,
-    hight: 50,
     alt: "Image of a gear"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change wallpaper"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Change username"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex items-center justify-around w-full"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Contacts")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col w-full lg:w-auto"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_5__["StandardButton"], {
+    styleName: "bg-blue-500 hover:bg-blue-600 rounded-full text-white my-2",
+    value: "Change profile image"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_5__["StandardButton"], {
+    styleName: "bg-blue-500 hover:bg-blue-600 rounded-full text-white my-2",
+    value: "Change wallpaper"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_5__["StandardButton"], {
+    styleName: "bg-blue-500 hover:bg-blue-600 rounded-full text-white my-2",
+    value: "Change password"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttons__WEBPACK_IMPORTED_MODULE_5__["StandardButton"], {
+    styleName: "bg-blue-500 hover:bg-blue-600 rounded-full text-white my-2",
+    value: "Change username"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex items-center justify-around w-full mt-20 h-50vh linearGradientBlue2 text-white"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "text-3xl"
+  }, "About us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "w-64 font-sans"
+  }, "We are memory fanatics. Come join and learn more about how we improve our memories. ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "www.youtube.com"
+  }, "www.youtube.com"), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SettingsP);

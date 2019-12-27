@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import settingIcon from "../../images/settings.png";
 import hamburgerMenu from './../../images/menu-symbol-of-three-parallel-lines.png';
@@ -6,23 +6,28 @@ import { StandardButton } from './buttons';
 import SettingsWindow from './popup windows comps/SettingsWindow';
 
 
-export class Navbar extends React.Component {
+export class Navbar extends Component {
+  //! relearn the onclick. (5 minutes). Then once all wired up take the time to do some animations. Learn what is there to react native
 
-  handleClick () {
-    console.log('success');
+  state = {
+    on: true,
+  }
+
+  clickFunc() {
+    this.props.handleClick('workd');
   }
   
-  render () {
-    return (
-      <div className="relative z-10">
+    render() {
+      return (
+        <div className="relative">
       <div className="bg-black-transparent xxl:hidden w-full z-50 fixed">
         <div className="container mx-auto xl:rounded-b">
-          
+          {this.props.stateValue}
           <div className="flex justify-between"> {/* //! onclick then element turns from hidden to block */}  
-            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2" onClick={this.handleClick}>
+            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2" onClick={this.clickFunc}>
               <img src={settingIcon} alt="settings icon" />
             </div>
-            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2" onClick={this.handleClick}>
+            <div className="h-12 w-12 m-4 hover:bg-blue-800 p-2">
               <img src={hamburgerMenu} alt="menu icon" />
             </div>
           </div>
@@ -37,10 +42,10 @@ export class Navbar extends React.Component {
 
 export const Navbar2 = () => {
   return (
-   <div className="linearGradientBlue2 lg:bg-black-transparent static">
+   <div className="linearGradientBlue lg:bg-black-transparent static">
       <div className="container mx-auto xl:rounded-b h-20">
         <div className="flex w-full h-full items-center justify-end">
-        <img className="xl:hidden right-0" src={hamburgerMenu} width='50' height='50' alt="Menu icon"/>
+        <img className="xl:hidden right-0 mr-5" src={hamburgerMenu} width='50' height='50' alt="Menu icon"/>
         <div className="hidden xl:flex justify-end">
           <StandardButton
             value="Settings"

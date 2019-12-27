@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { CallToAction } from '../components/buttons';
@@ -13,16 +13,36 @@ import MenuWindow from '../components/popup windows comps/MenuWindow';
 
 
 
-const FlashCardsP = () => { //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
-  return (
-    <div className="relative">
-      <div className="hidden z-50" id="settingWindow">
+export class FlashCardsP extends Component { //! make an option to edit a card within flashcard mode. Make it so whe the screen is flippd the wording is flipped too; sidewys
+  constructor(props) {
+    super(props);
+    this.handlingC = this.handlingC.bind(this);
+  }
+
+  state = {
+    on: false, 
+  }
+
+  handleClick = () => {
+    this.setState({
+      on: !this.state.on
+    })
+  }//? telling it to set state oposite of on.
+
+  handlingC (test) {
+    console.log(test);
+  }
+
+  render () {
+    return (
+      <div className="relative">
+      <div className="hidden" id="settingWindow">
         <SettingsWindow />
       </div>
       <div className="hidden" id="menuWindow">
         <MenuWindow />
       </div>
-      <Navbar />
+      <Navbar stateValue="123" handleClick={this.handlingC}  /> {/* //!!!!!Here */}
       <div className="sm:hidden">
         <FlashcardPhoneScreen />
       </div>
@@ -63,6 +83,7 @@ const FlashCardsP = () => { //! make an option to edit a card within flashcard m
     </div>
   </div>
   );
+  }
 };
 
 export default FlashCardsP;

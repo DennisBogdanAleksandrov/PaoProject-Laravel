@@ -1,0 +1,5 @@
+{
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
+//* created .babelrc in the root directory and have put the plugin manually.
+//! The problem was that the for some reason the project didn't recognize some of the newer react syntax and so I needed to add an plugin for it to be able to read it. 

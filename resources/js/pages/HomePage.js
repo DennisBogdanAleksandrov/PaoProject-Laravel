@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import { CallToAction } from '../components/buttons';
 import PaoTable from '../components/PaoTable';
@@ -9,10 +9,11 @@ import SidebarLeft from '../components/SidebarL';
 
 
 
-const Home = () => {
+export class Home extends Component {
+  render() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar valuePass="Success!" /> */}
       <div className="container mx-auto">
         <div className="flex justify-center h-80vh">
           <div className="flex flex-col">
@@ -38,6 +39,7 @@ const Home = () => {
       </div>
     </div>
   );
+  }
 };
 
 export default Home;
